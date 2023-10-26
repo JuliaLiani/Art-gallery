@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <link rel ="stylesheet" href="styles.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+   </head>
+   <body>
+      <div class="header heading">
+         <h1>Local artists display!</h1>
+      </div>
+      <div class="container">
+         <div class="item one selected">
+            <h4>ALAN SAKHAVARZ</h4>
+            <p class="par">TANGLED, 23" X 13" X 11".</p>
+            <p class="price">$8500 CAD</p>
+         </div>
+         <div class="item two">
+            <h4 class="juliaAgnes">JULIA AGNES</h4>
+            <p class="par parColor">"ENID," 14" X 10" X 10".</p>
+            <p class="price priceColor">$5,600 CAD</p>
+         </div>
+         <div class="item three">
+            <h4>ANDREW BENYEI</h4>
+            <p class="par">SYNERGY, ED. 2/12.</p>
+            <p class="price">$14,500 CAD</p>
+         </div>
+         <div class="item four">
+            <h4>ALAN SAKHAVARZ</h4>
+            <p class="par">THE SEEKER, 27" X 16" X 8".</p>
+            <p class="price">$18,000 CAD</p>
+         </div>
+         <div class="item five">
+            <h4>JULIA AGNES</h4>
+            <p class="par">GRUMPUS, 12" X 13" X 8".</p>
+            <p class="price">$5,000 CAD</p>
+         </div>
+         <div class="item six">
+            <h4>JOSE UNDA</h4>
+            <p class="par">PHOTONS, 32" X 39".</p>
+            <p class="price">$4,000 CAD</p>
+         </div>
+      </div>
+      <div class="header heading">
+         <h3>Send us a message</h3>
+      </div>
+      <form
+         action="https://formspree.io/f/xoqorpzn"
+         method="POST">
+         
+         <input type = "hidden" name = "_language" value = "en" >
+         
+         <div class="header">
+            <label>
+            Your email:
+            <input type = "email" class = "text-input" name = "email" placeholder="Your email..." required = " " >
+            </label>
+         </div>
+         <div class="header">
+            <label>
+            Your message:
+            <textarea name = "message" class = "text-input" placeholder = "Type your message..." required = " " > </textarea>
+            </label>
+         </div>
+         <br>
+         <!-- your other form fields go here -->
+         <div class="header">
+            <button type="submit" class="btn">Send</button>
+         </div>
+      </form>
+      <script src="index.js"></script>
+   </body>
+</html>
