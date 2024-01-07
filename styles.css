@@ -1,125 +1,163 @@
 body{
-    background-color: black;
-    }
-    /*positioning 
-    <h1>
-    */
-    .header{
-    display: flex;
-    justify-content: center;
-    }
-    .heading{
-    color: white;
-    font-size: 60px;
-    font-family: 'Dancing Script', cursive; 
-    }
-    .one{
-    background-image: url(resistance-24-x-14-x-9-sculpture-a-sakhavarz-792230_800x.webp);
-    }
-    .two{
-    background-image: url(2.webp);
-    }
-    .three{
-    background-image: url(3.webp);
-    }
-    .four{
-    background-image: url(4.webp);
-    }
-    .five{
-    background-image: url(5.webp);
-    }
-    .six{
-    background-image: url(6.webp);
-    }
-    /*positioning container/gallery*/ 
-    .container{
-    display: flex;
-    }
-    /*
-    -positioning images/ flex:1 so images cover same amount of space.
-    -posicioniruyem otnositelno roditelya
-    -zdes u nas roditel*/ 
-    .item{
-    flex: 1;
-    height: 90vh;
-    background-size: cover;
-    background-position: center;
-    font-family: 'Dancing Script', cursive; 
-    margin: 5px;
-    position: relative;
-    color: white;
-    font-size: 60px;
-    }
-    h4{
-    position: absolute;
-    top:15px;
-    left: 60px;
-    color: black;
-    opacity: 0;
-    }
-    .par{
-    position: absolute;
-    top: 100px;
-    left: 60px;
-    color: black;
-    opacity: 0;
-    }
-    .price{
-    position: absolute;
-    bottom: 40px;
-    left: 60px;
-    color: black;
-    background-color: white;
-    opacity: 0;
-    }
-    .parColor, .priceColor, .juliaAgnes{
-    background-color: rgb(177, 177, 177);
-    }
-    .selected{
-    flex: 4;
-    }
-    .selected h4{
-    font-size: 40px;
-    transition: 1s all ease-in;
-    opacity: 1;
-    }
-    .selected .par{
-    font-size: 20px;
-    transition: 1s all ease-in;
-    opacity: 1;
-    }
-    .selected .price{
-    font-size: 35px;
-    transition: 1s all ease-in;
-    font-weight: bold;
-    opacity: 1;                                                           
-    }                                                 
-    label{
-    color:white;
-    font-family: 'Dancing Script', cursive; 
-    font-size: 30px;
-    }
-    .text-input{
-    font-size: 20px;
-    border: none;
-    background-color: black;
-    padding: 12px 20px;
-    color: white;
-    }
-    .btn{
-    background-color: rgb(75, 75, 75);
-    font-size: 30px;
-    font-family: 'Dancing Script', cursive; 
-    flex: 1;
-    }
-
-    @media all and (max-width: 800px){
-        heading{
-            font-size: 45px;
-        }
-    }
-      @media all and (max-width: 500px){
-        heading{
-            font-size: 25px;
-        }
-    }
+background-color: black;
+}
+.header{
+display: flex;
+justify-content: center;
+}
+.heading{
+color: white;
+font-size: 60px;
+font-family: 'Dancing Script', cursive; 
+}
+.one{
+background-image: url(resistance-24-x-14-x-9-sculpture-a-sakhavarz-792230_800x.webp);
+}
+.two{
+background-image: url(2.webp);
+}
+.three{
+background-image: url(3.webp);
+}
+.four{
+background-image: url(4.webp);
+}
+.five{
+background-image: url(5.webp);
+}
+.six{
+background-image: url(6.webp);
+}
+/*positioning container/gallery*/ 
+.container{
+display: flex;
+}
+/*
+-positioning images/ flex:1 so images cover same amount of space.
+-posicioniruyem otnositelno roditelya
+-zdes u nas roditel*/ 
+.item{
+flex: 1;
+height: 90vh;
+background-size: cover;
+background-position: center;
+font-family: 'Dancing Script', cursive; 
+margin: 5px;
+position: relative;
+color: white;
+font-size: 60px;
+}
+h4{
+position: absolute;
+top:15px;
+left: 60px;
+color: black;
+opacity: 0;
+}
+.par{
+position: absolute;
+top: 100px;
+left: 60px;
+color: black;
+opacity: 0;
+}
+.price{
+position: absolute;
+bottom: 40px;
+left: 60px;
+color: black;
+background-color: white;
+opacity: 0;
+}
+.parColor, .priceColor, .juliaAgnes{
+background-color: rgb(177, 177, 177);
+}
+.selected{
+flex: 4;
+}
+.selected h4{
+font-size: 40px;
+transition: 1s all ease-in;
+opacity: 1;
+}
+.selected .par{
+font-size: 20px;
+transition: 1s all ease-in;
+opacity: 1;
+}
+.selected .price{
+font-size: 35px;
+transition: 1s all ease-in;
+font-weight: bold;
+opacity: 1;                                                           
+}                                                 
+label{
+color:white;
+font-family: 'Dancing Script', cursive; 
+font-size: 30px;
+}
+.text-input{
+font-size: 20px;
+border: none;
+background-color: black;
+padding: 12px 20px;
+color: white;
+}
+.btn{
+background-color: rgb(75, 75, 75);
+font-size: 30px;
+font-family: 'Dancing Script', cursive; 
+flex: 1;
+}
+@media all and (max-width: 800px){
+.heading{
+font-size: 35px;
+}
+.item{
+font-size:30px;
+}
+.selected h4{
+font-size: 30px;
+}
+.selected .par{
+font-size: 16px;
+}
+.selected .price{
+font-size: 20px;
+}
+label{
+font-size: 20px;
+}
+.text-input{
+font-size: 11px;
+}
+.btn{
+font-size: 25px;
+}
+}
+@media all and (max-width: 500px){
+.heading{
+font-size: 20px;
+}
+.item{
+font-size:20px;
+}
+.selected h4{
+font-size: 16px;
+}
+.selected .par{
+font-size: 10px;
+}
+.selected .price{
+font-size: 12px;
+}
+label{
+font-size: 11px;
+}
+.text-input{
+font-size: 9px;
+}
+.btn{
+font-size: 20px;
+}
+}
